@@ -1,0 +1,72 @@
+@import '../common/common.wxss';
+
+swiper {
+  height: 421.5rpx;
+}
+
+swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+
+.select-title, .newest-title {
+  width: 100%;
+  padding: 30rpx 0;
+  height: 40rpx;
+  color: #ab956d;
+  text-align: center;
+}
+
+.select-top-small {
+  width: 375rpx;
+  height: 375rpx;
+  float: left;
+}
+
+.select-bottom, .select-top {
+  width: 100%;
+  height: 375rpx;
+}
+
+.select-top-small image, .select-bottom image, .select-top-small navigator,
+.select-bottom navigator {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.m-rec view {
+  box-sizing: border-box;
+}
+
+.label {
+  color: #c0b398;
+  text-align: center;
+  line-height: 90rpx;
+}
+
+.m-rec  .rec-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.m-rec .rec-item {
+  flex: 0 0 auto;
+  width: 50%;
+  padding: 20rpx;
+  text-align: center;
+}
+
+.m-rec .rec-item .rec-item-wrap {
+  padding: 25rpx 0;
+  border-radius: 15rpx;
+  background-color: #f2f2f2;
+}
+
+.m-rec .rec-item .cover {
+  display: flex;
+  width: 200rpx;
+  height: 200rpx;
+  margin: 0 auto 20rpx;
+}
+

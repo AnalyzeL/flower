@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+
+
+	<!-- 指定spring配置文件 -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/classes/spring.xml</param-value>
+	</context-param>
+	
+	<!-- 配置spring监听器 项目启动时初始化bean 管理struts的actioin -->
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+
+	<!-- struts拦截器配置 -->
+    <filter>
+         <filter-name>CORS</filter-name>  
+	        <filter-class>com.thetransactioncompany.cors.CORSFilter</filter-class>  
+	        <init-param>  
+	            <param-name>cors.allowOrigin</param-name>  
+	            <param-value>http://localhost:8080</param-value>  
+	        </init-param>  
+	        <init-param>  
+	            <param-name>cors.supportedMethods</param-name>  
+	            <param-value>GET,POST,HEAD,PUT,DELETE</param-value>  
+	        </init-param>  
+	        <init-param>  
+	            <param-name>cors.supportedHeaders</param-name>  
+	            <param-value>Accept,Origin,X-Requested-With,Content-Type,Last-Modified</param-value>  
+	        </init-param>  
+	        <init-param>  
+	            <param-name>cors.exposedHeaders</param-name>  
+	            <param-value>Set-Cookie</param-value>  
+	        </init-param>  
+	        <init-param>  
+	            <param-name>cors.supportsCredentials</param-name>  
+	            <param-value>true</param-value>  
+	        </init-param>
+	        <filter-name>struts2</filter-name>
+        <filter-class>org.apache.struts2.dispatcher.filter.StrutsPrepareAndExecuteFilter</filter-class>  
+    </filter>
+
+	<!-- struts拦截器过滤路径 -->
+	<filter-mapping>
+		<filter-name>struts2</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	
+	<!-- spring编码过滤器 -->
+	<filter>
+		<filter-name>characterEncodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>forceEncoding</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+
+	<!-- 编码过滤器映射路径 -->
+	<filter-mapping>
+		<filter-name>CORS</filter-name>  
+        <url-pattern>/*</url-pattern>  
+		<filter-name>characterEncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+
+	<!-- 默认主页 -->
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+</web-app>

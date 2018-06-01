@@ -1,0 +1,99 @@
+#quick_view_popup-overlay {
+	background-color: rgba(0, 0, 0, 0.7);
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 999;
+}
+#quick_view_popup-wrap {
+	position: absolute;
+	top: 5%;
+	left: 0;
+	z-index: 1101;
+	outline: none;
+	display: none;
+	width: auto;
+	right: 0px;
+}
+#quick_view_popup-outer {
+	position: relative;
+	/*width: 100%;*/ width: 800px;
+	height: 100%;
+	background: #fff;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin: auto;
+}
+#quick_view_popup-content {
+	border-radius: 0px;
+	outline: medium none;
+	overflow: hidden;
+	padding: 10px 5px;
+	position: relative;
+	width: 800px;
+	z-index: 1102;
+	background: #fff;
+}
+#quick_view_popup-close {
+	cursor: pointer;
+	display: none;
+	position: absolute;
+	right: -6px;
+	top: -6px;
+	z-index: 1103;
+	font-size: 25px;
+	color: #e84c3d;
+}
+.quick_view_popup {
+	background: #333;
+	position: absolute;
+}
+
+#quick_view_popup-content .product-view .product-img-box .product-image .more-views-items img{ max-width:100%}
+#quick_view_popup-content .product-view .product-name h1 {
+    font-size: 26px;
+    margin: 0 0 2px;
+    padding-bottom: 6px;
+    padding-right: 0px;
+    letter-spacing: 0.2px;
+}
+#quick_view_popup-content .product-view .product-shop .add-to-box {
+    padding: 10px 0px 0px;
+
+    border-bottom: 0px dotted #ddd;
+}
+#quick_view_popup-content .email-addto-box {
+    display: inline-block;
+    margin-left: 0px; margin-top:12px;
+}
+@media only screen and (min-width:300px) and (max-width:767px) {
+#quick_view_popup-content {
+	width: 100%;
+}
+#quick_view_popup-outer {
+	width: 90%;
+}
+#quick_view_popup-content .product-view-area {
+	margin: 0px;
+}
+#quick_view_popup-content .availability {
+	font-size: 12px;
+}
+#quick_view_popup-content .size li, #quick_view_popup-content .color ul li, #quick_view_popup-content .cart-plus-minus {
+	margin-bottom: 5px;
+}
+#quick_view_popup-content .product-color-size-area .size-area {
+	width: 100%;
+}
+}
+ @media only screen and (min-width:768px) and (max-width:992px) {
+#quick_view_popup-outer {
+	width: 90%;
+}
+#quick_view_popup-content {
+	width: 100%;
+}
+}

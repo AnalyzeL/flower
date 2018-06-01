@@ -1,0 +1,114 @@
+body {
+	margin: 0px
+}
+p {
+	margin: 0px
+}
+body {
+	color: #000; background-color: #DFE8F6
+}
+body {
+	font-size: 12px; line-height: 150%; font-family: "verdana", "arial", "helvetica", "sans-serif"
+}
+table {
+	font-size: 12px; line-height: 150%; font-family: "verdana", "arial", "helvetica", "sans-serif"
+}
+input {
+	font-size: 12px; font-family: "verdana", "arial", "helvetica", "sans-serif"
+}
+input[type="text"],[type="file"] {
+	background: #E3EFFB;
+}
+select{
+	background: #E3EFFB;
+}
+textarea{
+	background: #E3EFFB;
+}
+select {
+	font-size: 12px; font-family: "verdana", "arial", "helvetica", "sans-serif"
+}
+textarea {
+	font-size: 12px; font-family: "verdana", "arial", "helvetica", "sans-serif"
+}
+a:link {
+	color: #036; text-decoration: none
+}
+a:visited {
+	color: #036; text-decoration: none
+}
+a:hover {
+	color: #f60; text-decoration: underline
+}
+a.menuchild:link {
+	color: #036; text-decoration: none
+}
+a.menuchild:visited {
+	color: #036; text-decoration: none
+}
+a.menuchild:hover {
+	color: #f60; text-decoration: underline
+}
+a.menuparent:link {
+	color: #000; text-decoration: none
+}
+a.menuparent:visited {
+	color: #000; text-decoration: none
+}
+a.menuparent:hover {
+	color: #f60; text-decoration: none
+}
+table.position {
+	width: 100%
+}
+tr.position {
+	height: 25px; background-color: #f4f7fc
+}
+td.position {
+	border-right: #adceff 1px solid; padding-left: 20px; border-bottom: #adceff 1px solid
+}
+tr.listheadertr {
+	font-weight: bold; height: 25px; background-color: #ebf4fd; text-align: center
+}
+tr.listtr {
+	height: 25px; background-color: #fff; text-align: center
+}
+tr.listalternatingtr {
+	height: 25px; background-color: #fffdf0; text-align: center
+}
+tr.listfootertr {
+	height: 30px; background-color: #ebf4fd; text-align: center
+}
+table.edittable {
+	width: 98%; background-color: #b1ceee
+}
+tr.editheadertr {
+	height: 25px; background-color: #ebf4fd
+}
+td.editheadertd {
+	padding-left: 50px; font-weight: bold
+}
+tr.edittr {
+	height: 30px
+}
+td.editlefttd {
+	width: 150px; background-color: #fffdf0; text-align: center
+}
+td.editrighttd {
+	padding-left: 10px; background-color: #fff
+}
+tr.editfootertr {
+	height: 40px; background-color: #ebf4fd
+}
+td.editfootertd {
+	padding-left: 150px
+}
+table.listtable {
+	border-color:#a0c6e5;border-collapse:collapse;
+}
+table.listtable th{
+	border-color:#a0c6e5;
+}
+table.listtable td{
+	border-color:#a0c6e5;
+}

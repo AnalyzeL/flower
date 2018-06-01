@@ -1,0 +1,31 @@
+<view class="main">
+  <swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="true">
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="100%" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="m-rec">
+    <view class="label">
+      <text>掌柜推荐</text>
+    </view>
+    <view class="rec-list">
+      <view 
+        class="rec-item" 
+        wx:for="{{flows}}" 
+        wx:key="index" 
+        wx:for-item="flow"
+        bindtap="tolist"
+        data-id="{{flow.id}}"
+      >
+        <view class="rec-item-wrap">
+          <image class="cover" src="{{flow.photo}}"></image>
+          <view class="name">{{flow.name}}</view>
+          <view class="price">￥ {{flow.price}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
